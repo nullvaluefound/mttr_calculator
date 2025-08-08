@@ -62,7 +62,6 @@ Examples:
         """
             )
     parser.add_argument('-h', '--help', action='help', default=argparse.SUPPRESS, help='show this help message and exit')
-    # parser.add_argument('-v', '--version', action='version', version='%(prog)s 1.0', help='show the version and exit'       )
     parser.add_argument("filepath", type=str, help="The file path to read the data from")
     parser.add_argument("--start-date", type=str, required=False, help="The start date to calculate the MTTR from date format accepted: mm/dd/yyyy")
     parser.add_argument("--end-date", type=str, required=False, help="The end date to calculate the MTTR to date format accepted: mm/dd/yyyy")
